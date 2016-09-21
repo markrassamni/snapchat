@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>702278233283-p55m8pk82cgs9ltnpntbmsbuiejp2ikn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.702278233283-p55m8pk82cgs9ltnpntbmsbuiejp2ikn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDFCc2y4UPG2ZZs5wxSMFzIWgKu-4chnDM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>702278233283</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.markrassamni.Mark-s-Snaps</string>
+	<key>PROJECT_ID</key>
+	<string>marks-snaps</string>
+	<key>STORAGE_BUCKET</key>
+	<string>marks-snaps.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:702278233283:ios:ea43eda91266b3b7</string>
+	<key>DATABASE_URL</key>
+	<string>https://marks-snaps.firebaseio.com</string>
+</dict>
+</plist>

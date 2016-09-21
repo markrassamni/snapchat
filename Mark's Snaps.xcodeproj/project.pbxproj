@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8B78067E1065E4841A61DA5 /* Pods_Mark_s_Snaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6FD270AC5B685AA16C1080 /* Pods_Mark_s_Snaps.framework */; };
+		F906A8D71D92957F00734797 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A8D61D92957F00734797 /* LoginVC.swift */; };
+		F919EE031D92784200DD0F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F919EE021D92784200DD0F96 /* GoogleService-Info.plist */; };
 		F937D0C01D91380A00E2EF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937D0BF1D91380A00E2EF48 /* AppDelegate.swift */; };
-		F937D0C21D91380A00E2EF48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937D0C11D91380A00E2EF48 /* ViewController.swift */; };
+		F937D0C21D91380A00E2EF48 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937D0C11D91380A00E2EF48 /* CameraVC.swift */; };
 		F937D0C51D91380A00E2EF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937D0C31D91380A00E2EF48 /* Main.storyboard */; };
 		F937D0C71D91380A00E2EF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F937D0C61D91380A00E2EF48 /* Assets.xcassets */; };
 		F937D0CA1D91380A00E2EF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937D0C81D91380A00E2EF48 /* LaunchScreen.storyboard */; };
+		F937D0D61D91386C00E2EF48 /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F937D0D51D91386C00E2EF48 /* AAPLCameraViewController.m */; };
+		F937D0D91D91388300E2EF48 /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = F937D0D81D91388300E2EF48 /* AAPLPreviewView.m */; };
+		F9CBFA541D928E1C00346673 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CBFA531D928E1C00346673 /* RoundTextField.swift */; };
+		F9CBFA561D92929F00346673 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CBFA551D92929F00346673 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AB485E2E9723326FA8E469B /* Pods-Mark's Snaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mark's Snaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mark's Snaps/Pods-Mark's Snaps.release.xcconfig"; sourceTree = "<group>"; };
+		835D3FC2818D106051FB9F24 /* Pods-Mark's Snaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mark's Snaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mark's Snaps/Pods-Mark's Snaps.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6FD270AC5B685AA16C1080 /* Pods_Mark_s_Snaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mark_s_Snaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F906A8D61D92957F00734797 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F919EE021D92784200DD0F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F937D0BC1D91380A00E2EF48 /* Mark's Snaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mark's Snaps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937D0BF1D91380A00E2EF48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F937D0C11D91380A00E2EF48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F937D0C11D91380A00E2EF48 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		F937D0C41D91380A00E2EF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F937D0C61D91380A00E2EF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F937D0C91D91380A00E2EF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F937D0CB1D91380A00E2EF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F937D0D41D91386C00E2EF48 /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
+		F937D0D51D91386C00E2EF48 /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
+		F937D0D71D91388300E2EF48 /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
+		F937D0D81D91388300E2EF48 /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
+		F937D0DC1D9138CC00E2EF48 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
+		F937D0DD1D913A6A00E2EF48 /* Mark's Snaps-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Mark's Snaps-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F9CBFA531D928E1C00346673 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		F9CBFA551D92929F00346673 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B78067E1065E4841A61DA5 /* Pods_Mark_s_Snaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		572EEF0C29D6AC0E91CE5ECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				835D3FC2818D106051FB9F24 /* Pods-Mark's Snaps.debug.xcconfig */,
+				5AB485E2E9723326FA8E469B /* Pods-Mark's Snaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B55D925E8CDA26D93A37A840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD6FD270AC5B685AA16C1080 /* Pods_Mark_s_Snaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F937D0B31D91380A00E2EF48 = {
 			isa = PBXGroup;
 			children = (
 				F937D0BE1D91380A00E2EF48 /* Mark's Snaps */,
 				F937D0BD1D91380A00E2EF48 /* Products */,
+				572EEF0C29D6AC0E91CE5ECE /* Pods */,
+				B55D925E8CDA26D93A37A840 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +94,56 @@
 		F937D0BE1D91380A00E2EF48 /* Mark's Snaps */ = {
 			isa = PBXGroup;
 			children = (
+				F937D0DB1D9138C100E2EF48 /* Protocols */,
+				F937D0D31D91386200E2EF48 /* Model */,
+				F937D0D21D91385F00E2EF48 /* View */,
+				F937D0D11D91385B00E2EF48 /* Controller */,
 				F937D0BF1D91380A00E2EF48 /* AppDelegate.swift */,
-				F937D0C11D91380A00E2EF48 /* ViewController.swift */,
 				F937D0C31D91380A00E2EF48 /* Main.storyboard */,
 				F937D0C61D91380A00E2EF48 /* Assets.xcassets */,
 				F937D0C81D91380A00E2EF48 /* LaunchScreen.storyboard */,
+				F937D0DD1D913A6A00E2EF48 /* Mark's Snaps-Bridging-Header.h */,
 				F937D0CB1D91380A00E2EF48 /* Info.plist */,
+				F919EE021D92784200DD0F96 /* GoogleService-Info.plist */,
 			);
 			path = "Mark's Snaps";
+			sourceTree = "<group>";
+		};
+		F937D0D11D91385B00E2EF48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F937D0D41D91386C00E2EF48 /* AAPLCameraViewController.h */,
+				F937D0D51D91386C00E2EF48 /* AAPLCameraViewController.m */,
+				F937D0C11D91380A00E2EF48 /* CameraVC.swift */,
+				F906A8D61D92957F00734797 /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F937D0D21D91385F00E2EF48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F937D0D71D91388300E2EF48 /* AAPLPreviewView.h */,
+				F937D0D81D91388300E2EF48 /* AAPLPreviewView.m */,
+				F9CBFA531D928E1C00346673 /* RoundTextField.swift */,
+				F9CBFA551D92929F00346673 /* RoundButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F937D0D31D91386200E2EF48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F937D0DB1D9138C100E2EF48 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F937D0DC1D9138CC00E2EF48 /* AAPLCameraVCDelegate.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F937D0CE1D91380A00E2EF48 /* Build configuration list for PBXNativeTarget "Mark's Snaps" */;
 			buildPhases = (
+				1DFA5CD564CD42D54C2098DA /* [CP] Check Pods Manifest.lock */,
 				F937D0B81D91380A00E2EF48 /* Sources */,
 				F937D0B91D91380A00E2EF48 /* Frameworks */,
 				F937D0BA1D91380A00E2EF48 /* Resources */,
+				CDD72AB01D4342EEC0F1D0E1 /* [CP] Embed Pods Frameworks */,
+				6E541FDB5853932651616973 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F937D0CA1D91380A00E2EF48 /* LaunchScreen.storyboard in Resources */,
+				F919EE031D92784200DD0F96 /* GoogleService-Info.plist in Resources */,
 				F937D0C71D91380A00E2EF48 /* Assets.xcassets in Resources */,
 				F937D0C51D91380A00E2EF48 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +218,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DFA5CD564CD42D54C2098DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E541FDB5853932651616973 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mark's Snaps/Pods-Mark's Snaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD72AB01D4342EEC0F1D0E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mark's Snaps/Pods-Mark's Snaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F937D0B81D91380A00E2EF48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F937D0C21D91380A00E2EF48 /* ViewController.swift in Sources */,
+				F9CBFA561D92929F00346673 /* RoundButton.swift in Sources */,
+				F937D0C21D91380A00E2EF48 /* CameraVC.swift in Sources */,
+				F906A8D71D92957F00734797 /* LoginVC.swift in Sources */,
 				F937D0C01D91380A00E2EF48 /* AppDelegate.swift in Sources */,
+				F9CBFA541D928E1C00346673 /* RoundTextField.swift in Sources */,
+				F937D0D61D91386C00E2EF48 /* AAPLCameraViewController.m in Sources */,
+				F937D0D91D91388300E2EF48 /* AAPLPreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +398,7 @@
 		};
 		F937D0CF1D91380A00E2EF48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 835D3FC2818D106051FB9F24 /* Pods-Mark's Snaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VBN5K8MF76;
@@ -267,12 +407,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.markrassamni.Mark-s-Snaps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mark's Snaps-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F937D0D01D91380A00E2EF48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB485E2E9723326FA8E469B /* Pods-Mark's Snaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VBN5K8MF76;
@@ -281,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.markrassamni.Mark-s-Snaps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mark's Snaps-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +447,7 @@
 				F937D0D01D91380A00E2EF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
