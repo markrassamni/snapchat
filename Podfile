@@ -9,5 +9,6 @@ target 'Mark\'s Snaps' do
   pod 'Firebase'
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

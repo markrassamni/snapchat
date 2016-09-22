@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		E8B78067E1065E4841A61DA5 /* Pods_Mark_s_Snaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6FD270AC5B685AA16C1080 /* Pods_Mark_s_Snaps.framework */; };
 		F906A8D71D92957F00734797 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A8D61D92957F00734797 /* LoginVC.swift */; };
+		F906A8DA1D929BE600734797 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906A8D91D929BE600734797 /* AuthService.swift */; };
 		F919EE031D92784200DD0F96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F919EE021D92784200DD0F96 /* GoogleService-Info.plist */; };
+		F9278C3F1D934D5300619313 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278C3E1D934D5300619313 /* UserCell.swift */; };
+		F9278C411D93509B00619313 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9278C401D93509B00619313 /* User.swift */; };
 		F937D0C01D91380A00E2EF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937D0BF1D91380A00E2EF48 /* AppDelegate.swift */; };
 		F937D0C21D91380A00E2EF48 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937D0C11D91380A00E2EF48 /* CameraVC.swift */; };
 		F937D0C51D91380A00E2EF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937D0C31D91380A00E2EF48 /* Main.storyboard */; };
@@ -17,6 +20,8 @@
 		F937D0CA1D91380A00E2EF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937D0C81D91380A00E2EF48 /* LaunchScreen.storyboard */; };
 		F937D0D61D91386C00E2EF48 /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F937D0D51D91386C00E2EF48 /* AAPLCameraViewController.m */; };
 		F937D0D91D91388300E2EF48 /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = F937D0D81D91388300E2EF48 /* AAPLPreviewView.m */; };
+		F93ADB6D1D92B5F6005A4043 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93ADB6C1D92B5F6005A4043 /* DataService.swift */; };
+		F943CB261D93266600700AE7 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F943CB251D93266600700AE7 /* UsersVC.swift */; };
 		F9CBFA541D928E1C00346673 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CBFA531D928E1C00346673 /* RoundTextField.swift */; };
 		F9CBFA561D92929F00346673 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CBFA551D92929F00346673 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
@@ -26,7 +31,10 @@
 		835D3FC2818D106051FB9F24 /* Pods-Mark's Snaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mark's Snaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mark's Snaps/Pods-Mark's Snaps.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6FD270AC5B685AA16C1080 /* Pods_Mark_s_Snaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mark_s_Snaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F906A8D61D92957F00734797 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F906A8D91D929BE600734797 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F919EE021D92784200DD0F96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9278C3E1D934D5300619313 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F9278C401D93509B00619313 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F937D0BC1D91380A00E2EF48 /* Mark's Snaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mark's Snaps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937D0BF1D91380A00E2EF48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F937D0C11D91380A00E2EF48 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -40,6 +48,8 @@
 		F937D0D81D91388300E2EF48 /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
 		F937D0DC1D9138CC00E2EF48 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
 		F937D0DD1D913A6A00E2EF48 /* Mark's Snaps-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Mark's Snaps-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F93ADB6C1D92B5F6005A4043 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F943CB251D93266600700AE7 /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		F9CBFA531D928E1C00346673 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		F9CBFA551D92929F00346673 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +83,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F906A8D81D929BD200734797 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F906A8D91D929BE600734797 /* AuthService.swift */,
+				F93ADB6C1D92B5F6005A4043 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		F937D0B31D91380A00E2EF48 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +113,7 @@
 		F937D0BE1D91380A00E2EF48 /* Mark's Snaps */ = {
 			isa = PBXGroup;
 			children = (
+				F906A8D81D929BD200734797 /* Services */,
 				F937D0DB1D9138C100E2EF48 /* Protocols */,
 				F937D0D31D91386200E2EF48 /* Model */,
 				F937D0D21D91385F00E2EF48 /* View */,
@@ -116,6 +136,7 @@
 				F937D0D51D91386C00E2EF48 /* AAPLCameraViewController.m */,
 				F937D0C11D91380A00E2EF48 /* CameraVC.swift */,
 				F906A8D61D92957F00734797 /* LoginVC.swift */,
+				F943CB251D93266600700AE7 /* UsersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -127,6 +148,7 @@
 				F937D0D81D91388300E2EF48 /* AAPLPreviewView.m */,
 				F9CBFA531D928E1C00346673 /* RoundTextField.swift */,
 				F9CBFA551D92929F00346673 /* RoundButton.swift */,
+				F9278C3E1D934D5300619313 /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -134,6 +156,7 @@
 		F937D0D31D91386200E2EF48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9278C401D93509B00619313 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -271,13 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93ADB6D1D92B5F6005A4043 /* DataService.swift in Sources */,
 				F9CBFA561D92929F00346673 /* RoundButton.swift in Sources */,
 				F937D0C21D91380A00E2EF48 /* CameraVC.swift in Sources */,
 				F906A8D71D92957F00734797 /* LoginVC.swift in Sources */,
 				F937D0C01D91380A00E2EF48 /* AppDelegate.swift in Sources */,
+				F943CB261D93266600700AE7 /* UsersVC.swift in Sources */,
 				F9CBFA541D928E1C00346673 /* RoundTextField.swift in Sources */,
 				F937D0D61D91386C00E2EF48 /* AAPLCameraViewController.m in Sources */,
+				F9278C411D93509B00619313 /* User.swift in Sources */,
 				F937D0D91D91388300E2EF48 /* AAPLPreviewView.m in Sources */,
+				F9278C3F1D934D5300619313 /* UserCell.swift in Sources */,
+				F906A8DA1D929BE600734797 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +349,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -343,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -371,6 +400,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -387,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

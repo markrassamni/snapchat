@@ -27,6 +27,8 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+
+//        performSegue(withIdentifier: "LoginVC", sender: nil)
         guard FIRAuth.auth()?.currentUser != nil else {
             performSegue(withIdentifier: "LoginVC", sender: nil)
             return
@@ -41,7 +43,6 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
         changeCamera()
     }
     
-    
     func shouldEnableCameraUI(_ enable: Bool) {
         cameraBtn.isEnabled = enable
         print("Should enable camera UI: \(enable)")
@@ -53,11 +54,11 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     }
     
     func canStartRecording() {
-        print("Recording has started")
+        print("Can start recording")
     }
     
     func recordingHasStarted() {
-        print("Can start recording")
+        print("Recording has started")
     }
 
     
@@ -66,7 +67,7 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     
     
     func videoRecordingComplete(_ videoURL: URL!) {
-        
+        performSegue(withIdentifier: "UsersVC", sender: ["videoURL":videoURL])
     }
     
     func videoRecordingFailed() {
@@ -74,11 +75,27 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     }
     
     func snapshotTaken(_ snapshotData: Data!) {
-        
+        performSegue(withIdentifier: "UsersVC", sender: ["snapshotData":snapshotData])
     }
     
     func snapshotFailed() {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let usersVC = segue.destination as? UsersVC {
+            if let videoDict = sender as? Dictionary<String, URL> {
+                let url = videoDict["videoURL"]
+                usersVC.videoURL = url
+            } else if let snapDict = sender as? Dictionary<String, Data> {
+                let snapData = snapDict["snapshotData"]
+                usersVC.snapData = snapData
+            } else {
+                let dict = sender as? Dictionary<String, AnyObject>
+                let url = dict?["videoURL"]
+                usersVC.videoURL = url as! URL?
+            }
+        }
     }
 
 

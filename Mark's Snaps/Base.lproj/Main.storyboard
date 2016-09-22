@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A322" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,6 +59,7 @@
                         <outlet property="previewView" destination="2lG-pu-QJe" id="EbI-vP-z0d"/>
                         <outlet property="recordBtn" destination="laV-Kg-xb7" id="xzY-sQ-LZ2"/>
                         <segue destination="Cbd-9c-viG" kind="presentation" identifier="LoginVC" id="31D-xk-Wrc"/>
+                        <segue destination="Qjk-uD-pkL" kind="show" identifier="UsersVC" id="lr0-PO-qEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -199,11 +201,93 @@
             </objects>
             <point key="canvasLocation" x="752.79999999999995" y="37.331334332833585"/>
         </scene>
+        <!--UsersVC-->
+        <scene sceneID="ZIQ-ll-B0B">
+            <objects>
+                <viewController id="Qjk-uD-pkL" customClass="UsersVC" customModule="Mark_s_Snaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKx-Aq-3gS"/>
+                        <viewControllerLayoutGuide type="bottom" id="8IB-Z4-RMN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8s-fX-uTs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pCw-b9-7vz">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="112" id="OhA-E9-at8" customClass="UserCell" customModule="Mark_s_Snaps" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="112"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OhA-E9-at8" id="baC-jp-6dG">
+                                            <frame key="frameInset" width="375" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cP3-bU-iF6">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="230" id="NfH-NI-G10"/>
+                                                        <constraint firstAttribute="height" constant="32" id="Spa-di-JdQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cP3-bU-iF6" firstAttribute="centerY" secondItem="baC-jp-6dG" secondAttribute="centerY" id="dQS-1t-atc"/>
+                                                <constraint firstItem="cP3-bU-iF6" firstAttribute="leading" secondItem="baC-jp-6dG" secondAttribute="leadingMargin" constant="20" id="oaJ-j0-yVU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstNameLbl" destination="cP3-bU-iF6" id="Mg5-eg-a0H"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yg-lx-ect">
+                                <items>
+                                    <navigationItem title="Users" id="J2y-Gp-C51">
+                                        <barButtonItem key="rightBarButtonItem" image="send_snap" id="PKi-9a-Ee2">
+                                            <connections>
+                                                <action selector="sendSnapPressedWithSender:" destination="Qjk-uD-pkL" id="Jfo-Dd-FE1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pWj-hE-wSI">
+                                <color key="barTintColor" red="0.27450980390000002" green="0.59215686270000001" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8IB-Z4-RMN" firstAttribute="top" secondItem="pCw-b9-7vz" secondAttribute="bottom" id="8en-T0-NG5"/>
+                            <constraint firstItem="pWj-hE-wSI" firstAttribute="leading" secondItem="r8s-fX-uTs" secondAttribute="leading" id="9FJ-FP-7Fm"/>
+                            <constraint firstAttribute="trailing" secondItem="pCw-b9-7vz" secondAttribute="trailing" id="EbT-6w-rqQ"/>
+                            <constraint firstItem="8yg-lx-ect" firstAttribute="top" secondItem="fKx-Aq-3gS" secondAttribute="bottom" id="FbO-Xq-hiF"/>
+                            <constraint firstItem="pCw-b9-7vz" firstAttribute="top" secondItem="pWj-hE-wSI" secondAttribute="bottom" id="GfU-d5-nht"/>
+                            <constraint firstItem="pWj-hE-wSI" firstAttribute="top" secondItem="8yg-lx-ect" secondAttribute="bottom" id="JBk-na-6qo"/>
+                            <constraint firstAttribute="trailing" secondItem="pWj-hE-wSI" secondAttribute="trailing" id="NnK-zG-pTP"/>
+                            <constraint firstItem="8yg-lx-ect" firstAttribute="leading" secondItem="r8s-fX-uTs" secondAttribute="leading" id="T64-yO-eXK"/>
+                            <constraint firstAttribute="trailing" secondItem="8yg-lx-ect" secondAttribute="trailing" id="qyC-DF-wTD"/>
+                            <constraint firstItem="pCw-b9-7vz" firstAttribute="leading" secondItem="r8s-fX-uTs" secondAttribute="leading" id="sWL-Tz-jG0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="pCw-b9-7vz" id="aK3-8R-gMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNa-NO-KqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="-692.20389805097454"/>
+        </scene>
     </scenes>
     <resources>
         <image name="camera_icon_snap" width="29" height="24"/>
         <image name="createsnap_btn" width="30" height="30"/>
         <image name="devslopes" width="1080" height="1349"/>
         <image name="devslopes-mountains-white" width="451" height="335"/>
+        <image name="send_snap" width="24" height="23"/>
     </resources>
 </document>
